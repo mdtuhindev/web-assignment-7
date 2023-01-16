@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.container {
+    width: 100%;
+    padding: 0 125px;
+}
+.btn {
+    text-decoration: none;
+    display: inline-block;
+    background: #FF900E;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+/* body {
+    background: rgba(255, 144, 14, 0.1);
+} */
+
+/* Header Section */
+
+.header{
+    background: rgba(255, 144, 14, 0.1);
+}
+
+.header nav{
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+.logo {
+    font-size: 25px;
+    font-weight: 700;
+}
+.nav-bar {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.nav-item {
+    text-decoration: none;
+    color: #424242;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* Home Section */
+
+.home-section {
+    background: rgba(255, 144, 14, 0.1);
+}
+.home-text {
+    text-align: center;
+}
+.home-text h1 {
+    font-size: 45px;
+    font-weight: 700;
+    color: #131313;
+    margin-bottom: 20px;
+}
+.home-text p {
+    font-size: 16px;
+    color: #727272;
+    margin-bottom: 20px;
+}
+
+.home-img {
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.home-img  img{
+    width: 100%;
+}
+
+/* Hero Section */
+
+.hero-section {
+    margin-top: 100px;
+    background: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.hero-img {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+}
+.hero-img img {
+    width: 100%;
+}
+
+.hero-text h2 {
+    color: #727272;
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+.black {
+    color: #131313;
+}
+.orange {
+    color: #FF900E;
+}
+.hero-text p {
+    font-size: 16px;
+    color: #727272;
+    margin-bottom: 25px;
+}
+
+/* Work Section */
+
+.work-section {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.work-text h2 {
+    border-left: 5px solid #FF900E;
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    padding-left: 10px;
+}
+.work-text p {
+    font-size: 16px;
+    color: #727272;
+    margin-bottom: 25px;
+}
+.card-text {
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 35px;
+}
+.card-text h5 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.card-text p {
+    font-size: 16px;
+    color: #727272;
+    margin-bottom: 25px;
+}
+
+.work-img {
+    width: 100%;
+    position: relative;
+}
+.ditail {
+    position: absolute;
+    background: #FF900E;
+    border-radius: 8px;
+    display: inline-block;
+    padding: 35px;
+    bottom: 0;
+    left: -25px;
+}
+.ditail h3 {
+    font-size: 45px;
+    width: 700;
+    color: #FFFFFF;
+}
+.ditail h5 {
+    font-size: 25px;
+    color: #FFFFFF;
+}
+
+/* Generat Section */
+
+.generat-section {
+    margin-top: 100px;
+}
+.generat-section h2 {
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+.generat-section p {
+    font-size: 16px;
+    color: #727272;
+    margin-bottom: 25px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+    align-items: center;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.generat-card{
+    display: inline-block;
+    height: 100%;
+    background: #FFFFFF;
+    border: 1px solid #FF900E;
+    padding: 50px ;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.card-img img {
+    width: 50px;
+    padding: 15px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+/* Sponspors Section */
+
+.sponspors-section {
+    text-align: center;
+    margin-top: 100px;
+}
+.sponspors-section h2{
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+.sponspors-section p {
+    font-size: 16px;
+    color: #727272;
+    margin-bottom: 50px;
+}
+.sponspor {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+/* Footer Section */
+
+.footer {
+    background: #FFF4E7;
+    text-align: center;
+    margin-top: 100px;
+    padding: 50px;
+}
