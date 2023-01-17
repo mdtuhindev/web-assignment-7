@@ -8,8 +8,8 @@
 }
 
 .container {
-    width: 100%;
-    padding: 0 125px;
+    width: 1200px;
+    margin: 0 auto;
 }
 .btn {
     text-decoration: none;
@@ -31,11 +31,9 @@
 }
 
 .header nav{
-    width: 1200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
     padding: 10px 0;
 }
 .logo {
@@ -52,6 +50,13 @@
     color: #424242;
     font-size: 18px;
     font-weight: 500;
+}
+#menu-bar{
+    color: #131313;
+    font-size: 35px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
 }
 
 /* Home Section */
@@ -75,8 +80,6 @@
 }
 
 .home-img {
-    width: 1200px;
-    margin: 0 auto;
     margin-top: 50px;
 }
 .home-img  img{
@@ -86,9 +89,11 @@
 /* Hero Section */
 
 .hero-section {
+    width: 100%;
     margin-top: 100px;
     background: #FFFFFF;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 
@@ -125,10 +130,13 @@
 .work-section {
     margin-top: 100px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     gap: 30px;
 }
-
+.work-text {
+    width: 50%;
+}
 .work-text h2 {
     border-left: 5px solid #FF900E;
     font-size: 35px;
@@ -159,8 +167,11 @@
 }
 
 .work-img {
-    width: 100%;
+    width: 50%;
     position: relative;
+}
+.work-img img {
+    width: 100%;
 }
 .ditail {
     position: absolute;
@@ -244,6 +255,9 @@
     display: grid;
     grid-template-columns: repeat(5, 1fr);
 }
+.sponspor-ltd img {
+    width: 100%;
+}
 
 /* Footer Section */
 
@@ -251,5 +265,100 @@
     background: #FFF4E7;
     text-align: center;
     margin-top: 100px;
-    padding: 50px;
+    padding: 30px;
+}
+
+
+/* X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+    .container {
+        width: 1100px;
+        margin: 0 auto;
+    }
+}
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+    .container {
+        width: 950px;
+        margin: 0 auto;
+    }
+    #menu-bar {
+        display: block;
+    }
+    .nav-bar {
+        display: block;
+    }
+}
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    .container {
+        width: 750px;
+        margin: 0 auto;
+    }
+    .work-img, .work-text {
+        width: 100%;
+    }
+    .sponspor {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        width: 550px;
+        margin: 0 auto;
+    }
+    .hero-text {
+        order: 1;
+        margin-bottom: 100px;
+    }
+    .hero-img {
+        order: 2;
+        margin-bottom: 100px;
+    }
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .sponspor-ltd img {
+        width: 50%;
+    }
+}
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .container {
+        width: 350px;
+        margin: 0 auto;
+    }
+    .logo h1 {
+        font-size: 20px;
+    }
+    #menu-bar {
+        font-size: 20px;
+    }
+    .home-text h1 {
+        font-size: 20px;
+    }
+    .card-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .generat-section {
+        margin-top: 50px;
+    }
+    .sponspor {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .sponspors-section {
+        margin-top: 100px;
+    }
+    .sponspors-section p {
+        font-size: 12px;
+    }
+    .footer {
+        margin-top: 50px;
+    }
+    .footer p {
+        font-size: 8px;
+    }
 }
